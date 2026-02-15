@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Decision Engine</title>
-</head>
-<body>
+<h1>Decision Engine</h1>
 
-    <h1>Decision Engine</h1>
-    <label>Current Salary (Rs):</label>
-    <input type="number" id="salaryInput" />
+<h2>Job Path</h2>
 
-    <label>Annual Growth Rate (%):</label>
-    <input type="number" id="growthInput" />
+<label>Current Salary (₹):</label>
+<input type="number" id="salaryInput" />
+<br><br>
 
-    <button onclick="calculateProjection()">Simulate 10 years</button>
+<label>Annual Growth Rate (%):</label>
+<input type="number" id="growthInput" />
+<br><br>
 
-    <p id="result"></p>
+
+<h2>MBA Path</h2>
+
+<label>MBA Cost (₹):</label>
+<input type="number" id="mbaCostInput" />
+<br><br>
+
+<label>MBA Duration (years):</label>
+<input type="number" id="mbaDurationInput" />
+<br><br>
+
+<label>Post-MBA Salary (₹):</label>
+<input type="number" id="postSalaryInput" />
+<br><br>
+
+<label>Post-MBA Growth Rate (%):</label>
+<input type="number" id="postGrowthInput" />
+<br><br>
+
+<button onclick="calculateComparison()">Compare 10-Year Outcome</button>
+
+<p id="result"></p>
+
 <script src="script.js"></script>
-   
-
+  
 </body>
 </html>
