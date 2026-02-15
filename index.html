@@ -6,15 +6,17 @@
 <body>
 
     <h1>Decision Engine</h1>
-    <p>This is the beginning.</p>
+    <label>Current Salary (Rs):</label>
+    <input type="number" id="salaryInput" />
 
-    <button onclick="sayHello()">Click Me</button>
+    <label>Annual Growth Rate (%):</label>
+    <input type="number" id="growthInput" />
 
-    <script>
-        function sayHello() {
-            alert("Hello, Future Founder.");
-        }
-    </script>
+    <button onclick="calculateProjection()">Simulate 10 years</button>
+
+    <p id="result"></p>
+<script src="script.js"></script>
+   
 
 </body>
 </html>
